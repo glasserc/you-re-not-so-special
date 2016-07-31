@@ -4,6 +4,8 @@ You're Not So Special
 A simple extension to disable links from opening in new tabs on
 selected websites.
 
+You're Not So Special is released under the MPL, version 2.0.
+
 Rationale
 =========
 
