@@ -1,0 +1,26 @@
+{
+
+  "manifest_version": 2,
+  "name": "You're Not So Special",
+  "version": "1.0",
+
+  "description": "Turns off links from opening in new tabs on selected websites.",
+
+  "icons": {
+    "48": "icons/subtract-tab-48.png"
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "addon@example.com"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://twitter.com/*"],
+      "js": ["undo-new-tabs.js"]
+    }
+  ]
+
+}
