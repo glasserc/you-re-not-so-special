@@ -10,12 +10,6 @@
     "48": "icons/subtract-tab-48.png"
   },
 
-  "applications": {
-    "gecko": {
-      "id": "you-re-not-so-special@betacantrips.com"
-    }
-  },
-
   "content_scripts": [
     {
       "matches": ["*://twitter.com/*"],
