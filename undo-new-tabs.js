@@ -17,9 +17,11 @@ function manipulateAllLinks(d, f) {
 }
 
 manipulateAllLinks(document, function(link) {
-    if (link.href.indexOf('t.co') === -1 || !link.target) {
-        // This link is boring -- doesn't point to t.co or doesn't
-        // have a target, so we don't care about it.
+    if (!link.target) {
+        // This link is boring -- it doesn't have a target, so we
+        // don't care about it.
+        // Links back to Twitter don't generally have targets, so
+        // we don't worry about them.
         return;
     }
     // else {
